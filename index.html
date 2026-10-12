@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Pavani</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 8%;
+            background: #e0f2fe;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: #0284c7;
+        }
+
+        .hero p {
+            margin: 15px auto 25px;
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        h2.section-title {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: #e0f2fe;
+            padding: 10px 16px;
+            border-radius: 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .card h3 {
+            color: #0369a1;
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 12px;
+            color: #0284c7;
+        }
+
+        #contact {
+            text-align: center;
+            background: #e0f2fe;
+        }
+
+        #contact a {
+            color: #0369a1;
+            margin: 0 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 18px;
+            background: #0f172a;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 8px 0 0;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Pavani.</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Hi, I'm <span>Pavani Voddepalli</span></h1>
+        <h3>CSE Student | AI & Machine Learning Enthusiast</h3>
+        <p>
+            I am a Computer Science student passionate about
+            Artificial Intelligence, Machine Learning, and
+            problem-solving. I enjoy learning new technologies
+            and building practical projects.
+        </p>
+        <a href="#projects" class="btn">Explore My Projects</a>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am pursuing B.Tech in Computer Science and Engineering
+            with a specialization in Artificial Intelligence and
+            Machine Learning at SR University. I am continuously
+            improving my technical skills through coding practice,
+            projects, and internship programs. My goal is to become
+            a skilled software engineer and AI/ML professional.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills">
+            <span>C</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>SQL</span>
+            <span>Machine Learning</span>
+            <span>Data Structures & Algorithms</span>
+            <span>Data Analytics</span>
+            <span>AWS</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects">
+            <div class="card">
+                <h3>Financial Fraud Detection</h3>
+                <p>
+                    A machine learning project that identifies
+                    potentially fraudulent financial transactions
+                    using classification algorithms.
+                </p>
+                <a href="https://github.com/Pavani-Voddepalli-1"
+                   target="_blank">GitHub Profile</a>
+            </div>
+
+            <div class="card">
+                <h3>GraphMind Knowledge Graph Builder</h3>
+                <p>
+                    A project focused on extracting relationships
+                    and organizing information into a knowledge graph.
+                </p>
+                <a href="https://github.com/Pavani-Voddepalli-1"
+                   target="_blank">GitHub Profile</a>
+            </div>
+
+            <div class="card">
+                <h3>Smart Impact Response System</h3>
+                <p>
+                    An emergency response concept using LoRa, GSM,
+                    GPS, and Flutter to support location-based alerts.
+                </p>
+                <a href="https://github.com/Pavani-Voddepalli-1"
+                   target="_blank">GitHub Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <p>Feel free to explore my work and connect with me.</p>
+        <br>
+        <a href="https://github.com/Pavani-Voddepalli-1"
+           target="_blank">GitHub</a>
+
+        <a href="https://www.linkedin.com/"
+           target="_blank">LinkedIn</a>
+
+        <a href="https://leetcode.com/u/96Cuo1D6OP/"
+           target="_blank">LeetCode</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Pavani Voddepalli | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
